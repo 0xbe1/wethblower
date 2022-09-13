@@ -1,0 +1,15 @@
+[package]
+name = "wethblower"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eyre = "0.6"
+ethers = { version = "0.17.0", features = ["abigen", "ws", "openssl"] }
+tokio = { version = "1.5", features = ["macros", "rt-multi-thread"] }
+dotenv = "0.15.0"
+serde_json = "1.0.64"
+
+[build-dependencies]
+eyre = "0.6"
+ethers = { version = "0.17.0", features = ["abigen"] }
